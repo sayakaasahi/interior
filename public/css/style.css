@@ -1,0 +1,50 @@
+body {
+  background-color: #FFFFFF;
+  font-size: 20px;
+  color: #795549;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+header {
+  margin-top: 20px;
+}
+
+.container {
+  width: 500px;
+  text-align:　center;
+  margin : auto;
+}
+
+.row {
+  text-align: center;
+  margin: auto;
+}
+
+.header-title-area {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.text-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.next-page {
+  text-align: center;
+  margin: auto;
+}
+
