@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('form.start');
 });
+
+Route::get('question/firstquestion', 'QuestionController@firstquestion');
+
+Route::get('question/secondquestion', 'QuestionController@secondquestion');
+
+Route::get('question/thirdquestion', 'QuestionController@thirdquestion');
+
+Route::get('question/fourthquestion', 'QuestionController@fourthquestion');
+
+Route::get('question/lastquestion', 'QuestionController@lastquestion');
+
+
