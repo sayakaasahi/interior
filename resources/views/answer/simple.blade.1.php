@@ -26,15 +26,15 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-    　<img src="image/simple01.jpg" class="form-item" width="250px" height="200px" class="img-thumbnail">
-    　<img src="image/simple02.jpg" class="form-item" width="250px" height="200px"  class="img-thumbnail">
+      <img class="style" src="{{ asset('image/simple01.jpg') }}" alt="シンプル"　width="250px" height="200px">
+      <img class="style" src="{{ asset('image/simple02.jpg') }}" alt="シンプル"　width="250px" height="200px">
   　</div>
   　<div class="card-contents">
     　<h5>飾り気や無駄のない名前の通りシンプルなインテリアスタイル。<br>シンプルだからこそ、北欧家具でポイントを絞った「北欧シンプルスタイル」だったり、天然素材や木材を使った家具でシンプルにまとめた「ナチュラルシンプルスタイル」、メタル素材やガラス素材などを使ってシンプルなコーディネートをする「シンプルモダン」と捉え方によっては色々と派生していきます。</h5>
 　　</div>
   　 <div class="choice">
-  　   <a herf="#" class="btn btn-outline-success">もう一度診断する</a>
-    　<a herf="#" class="btn btn-outline-danger">お問い合わせ</a>
+  　   <a href="/" class="btn btn-secondary" >はじめに戻る</a>
+    　<a href="contact" class="btn btn-outline-danger">お問い合わせ</a>
      </div>
 　</div>
 </html>

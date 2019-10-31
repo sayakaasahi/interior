@@ -23,24 +23,25 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
+     <form action="{{ action('QuestionController@firstquestion') }}" method="post" enctype="multipart/form-data">
       <img class="collor" src="{{ asset('image/collor_brown.PNG') }}" alt="ブラウン"　width="130px" height="100px">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="ブラウン系">
+           <input id="collor_brown" type="radio" name="Collor" value="ブラウン系">
            ブラウン系
          </label>
        </div>
       <img class="collor" src="{{ asset('image//collor_modern.PNG') }}" alt="モダン"　width="130px" height="100px">
-  　  　 <div class="checkbox mb-3">
+  　    <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="モダン系">
+           <input id="collor_modern" type="radio" name="Collor" value="モダン系">
            モダン系
          </label>
       　</div>
       <img class="collor" src="{{ asset('image/collor_mono.PNG') }}" alt="モノトーン"　width="130px" height="100px">
-    　<div class="checkbox mb-3">
+    　 <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="モノトーン系">
+           <input id="collor_mono" type="radio" name="Collor" value="モノトーン系">
            モノトーン系
          </label>
       </div>
@@ -48,7 +49,9 @@
   　</div>
 　　<div class="next-page">
 　　  <a href="/" class="btn btn-secondary" >トップページに戻る</a>
-　　  <a href="secondquestion" class="btn btn-primary" >次へ</a>
-　　</div>  
+　　  {{ csrf_field() }}
+　　  <input type="submit" class="btn btn-primary" value="次へ">
+　　</div>
+　　 </form>
   </body>
 </html>

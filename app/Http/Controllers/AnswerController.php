@@ -9,7 +9,7 @@ class AnswerController extends Controller
 
   public function answer()
  {
-  return view('admin.form.answer');
+  return view('answer/#');
  }
 
 }

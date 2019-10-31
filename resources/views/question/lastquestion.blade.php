@@ -27,16 +27,16 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
     　<img src="image/..." alt="..." width="350px" height="400px" class="img-thumbnail">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="AAA">
+           <input id="#A" type="radio" name="Answer" value="A">
            A
          </label>
        </div>
     　<img src="image/..." alt="..." width="350px" height="400px" class="img-thumbnail">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="BBB">
+           <input id="#B" type="radio" name="Answer" value="B">
            B
          </label>
        </div>

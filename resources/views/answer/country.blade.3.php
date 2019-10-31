@@ -26,15 +26,15 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-    　<img src="image/country01.jpg" class="form-item" width="250px" height="200px" class="img-thumbnail">
-    　<img src="image/country02.jpg" class="form-item" width="250px" height="200px"  class="img-thumbnail">
+      <img class="style" src="{{ asset('image/country01.jpg') }}" alt="カントリー"　width="250px" height="200px">
+      <img class="style" src="{{ asset('image/country02.jpg') }}" alt="カントリー"　width="250px" height="200px">
   　</div>
   　<div class="card-contents">
     　<h5>カントリースタイルは、素朴でのどかな田舎風のインテリアスタイル。<br>無垢材を利用するなど、素材を活かす温かさが特徴。地域やテイストによってアメリカンカントリーやフレンチカントリー、イングリッシュカントリー、ナチュラルカントリーなどに分類されます。</h5>
 　　</div>
   　 <div class="choice">
-  　   <a herf="#" class="btn btn-outline-success">もう一度診断する</a>
-    　<a herf="#" class="btn btn-outline-danger">お問い合わせ</a>
+  　   <a href="/" class="btn btn-secondary" >はじめに戻る</a>
+    　<a href="contact" class="btn btn-outline-danger">お問い合わせ</a>
      </div>
 　</div>
 </html>

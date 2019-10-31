@@ -19,31 +19,32 @@
 <header>
   <div class="container">
     <div class="alert alert-success" role="alert">
-     Q1:好きな色素材は？
+     Q2:好きな色素材は？
     </div>
   </div>
 </header>
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
+     <form action="{{ action('QuestionController@secondquestion') }}" method="post" enctype="multipart/form-data">
     　<img class="Material" src="{{ asset('image/wood1.jpg') }}" alt="木目"　width="150px" height="200px">
        <div class="checkbox mb-3">
          <label>
-           <input type="checkbox" value="木目">
+           <input id="Material_wood" type="radio" name="Material" value="木目">
            木目
          </label>
        </div>
      <img class="Material" src="{{ asset('image/concrete.jpg') }}" alt="コンクリート"　width="150px" height="200px">
   　   <div class="checkbox mb-3">
          <label>
-           <input type="checkbox" value="コンクリート">
+           <input id="Material_concrete" type="radio" name="Material" value="コンクリート">
            コンクリート
          </label>
       </div>
       <img class="Material" src="{{ asset('image/iron.jpg') }}" alt="アイアン"　width="150px" height="200px">
     　<div class="checkbox mb-3">
          <label>
-           <input type="checkbox" value="アイアン">
+           <input id="Material_iron" type="radio" name="Material" value="アイアン">
            アイアン
          </label>
       </div>
@@ -51,7 +52,9 @@
   　</div>
 　　<div class="next-page">
 　　  <a href="firstquestion" class="btn btn-secondary" >はじめに戻る</a>
-　　  <a href="thirdquestion" class="btn btn-primary" >次へ</a>
+　　  {{ csrf_field() }}
+　　  <input type="submit" class="btn btn-primary" value="次へ">
 　　</div>  
+　　 </form>
   </body>
 </html>

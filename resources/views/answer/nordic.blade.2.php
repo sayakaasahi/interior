@@ -26,15 +26,15 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-    　<img src="image/nordic01.jpg" class="form-item" width="250px" height="200px" class="img-thumbnail">
-    　<img src="image/nordic02.jpg" class="form-item" width="250px" height="200px"  class="img-thumbnail">
+      <img class="style" src="{{ asset('image/nordic01.jpg') }}" alt="北欧"　width="250px" height="200px">
+      <img class="style" src="{{ asset('image/nordic02.jpg') }}" alt="北欧"　width="250px" height="200px">
   　</div>
   　<div class="card-contents">
     　<h5>シンプル＆ナチュラルが特徴のインテリアスタイル。<br>白やグレーを中心に、山や森のものを使って作られている木製や布製の家具や差し色や幾何学模様を取り入れたスタイル。</h5>
 　　</div>
   　 <div class="choice">
-  　   <a herf="#" class="btn btn-outline-success">もう一度診断する</a>
-    　<a herf="#" class="btn btn-outline-danger">お問い合わせ</a>
+  　   <a href="/" class="btn btn-secondary" >はじめに戻る</a>
+    　<a href="contact" class="btn btn-outline-danger">お問い合わせ</a>
      </div>
 　</div>
 </html>

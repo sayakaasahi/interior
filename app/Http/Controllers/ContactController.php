@@ -10,7 +10,7 @@ class ContactController extends Controller
 
   public function contact()
  {
-  return view('admin.form.contact');
+  return view('form/contact');
  }
 
 }

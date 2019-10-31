@@ -26,31 +26,32 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
+     <form action="{{ action('QuestionController@thirdquestion') }}" method="post" enctype="multipart/form-data">
       <img class="taste" src="{{ asset('image/natural01.jpg') }}" alt="ナチュラル系"　width="150px" height="200px">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="ナチュラル系">
+           <input id="taste_natural" type="radio" name="Taste" value="ホテルライク系">
            ナチュラル系
          </label>
        </div>
       <img class="taste" src="{{ asset('image/hotellike.jpg') }}" alt="ホテルライク系"　width="150px" height="200px">
-     <div class="checkbox mb-3">
+     <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="ホテルライク系">
+           <input id="taste_hotellike" type="radio" name="Taste" value="ホテルライク系">
            ホテルライク系
          </label>
        </div>
       <img class="taste" src="{{ asset('image/nordic01.jpg') }}" alt="北欧系"　width="150px" height="200px">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="北欧系">
+           <input id="taste_nordic" type="radio" name="Taste" value="北欧系">
            北欧系
          </label>
        </div>
       <img class="taste" src="{{ asset('image/vintage01.jpg') }}" alt="ヴィンテージ系"　width="150px" height="200px">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="ヴィンテージ系">
+           <input id="taste_vintage" type="radio" name="Taste" value="ヴィンテージ系">
            ヴィンテージ系
          </label>
        </div>
@@ -58,7 +59,9 @@
 　　</div>
 　　<div class="next-page">
 　　  <a href="firstquestion" class="btn btn-secondary" >はじめに戻る</a>
-　　  <a href="fourthquestion" class="btn btn-primary" >次へ</a>
+　　  {{ csrf_field() }}
+　　  <input type="submit" class="btn btn-primary" value="次へ">
 　　</div> 
+　　 </form>
   </body>
 </html>

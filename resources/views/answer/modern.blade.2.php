@@ -26,15 +26,15 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-    　<img src="image/modern01.jpg" class="form-item" width="250px" height="200px" class="img-thumbnail">
-    　<img src="image/modern02.jpg" class="form-item" width="250px" height="200px"  class="img-thumbnail">
+      <img class="style" src="{{ asset('image/modern01.jpg') }}" alt="モダン"　width="250px" height="200px">
+      <img class="style" src="{{ asset('image/modern02.jpg') }}" alt="モダン"　width="250px" height="200px">
   　</div>
   　<div class="card-contents">
     　<h5>無駄なものをそぎ落とした洗練されたインテリアスタイル。<br>白・黒・グレーを基調に機能美にあふれたアイテムを用いたスタイルは、ホテルやオフィスといった公共の場だけでなく、今では一般家庭の中でも多く見られます。</h5>
 　　</div>
   　 <div class="choice">
-  　   <a herf="#" class="btn btn-outline-success">もう一度診断する</a>
-    　<a herf="#" class="btn btn-outline-danger">お問い合わせ</a>
+  　   <a href="/" class="btn btn-secondary" >はじめに戻る</a>
+    　<a href="contact" class="btn btn-outline-danger">お問い合わせ</a>
      </div>
 　</div>
 </html>

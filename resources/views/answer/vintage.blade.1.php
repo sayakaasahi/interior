@@ -26,15 +26,15 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-    　<img src="image/vintage01.jpg" class="form-item" width="250px" height="200px" class="img-thumbnail">
-    　<img src="image/vintage02.jpg" class="form-item" width="250px" height="200px"  class="img-thumbnail">
+      <img class="style" src="{{ asset('image/vintage01.jpg') }}" alt="ヴィンテージ"　width="250px" height="200px">
+      <img class="style" src="{{ asset('image/vintage02.jpg') }}" alt="ヴィンテージ"　width="250px" height="200px">
   　</div>
   　<div class="card-contents">
     　<h5>ブラックやブラウン等ダークカラーでまとめたインテリアスタイル。<br>革やアイアン素材を取り入れ、傷や塗装のはげなどわざとダメージ感のある加工を施し、どこか懐かしさを感じられるスタイルです。</h5>
 　　</div>
   　 <div class="choice">
-  　   <a herf="#" class="btn btn-outline-success">もう一度診断する</a>
-    　<a herf="#" class="btn btn-outline-danger">お問い合わせ</a>
+  　   <a href="/" class="btn btn-secondary" >はじめに戻る</a>
+    　<a href="contact" class="btn btn-outline-danger">お問い合わせ</a>
      </div>
 　</div>
 </html>

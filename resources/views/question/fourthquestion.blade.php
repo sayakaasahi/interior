@@ -26,31 +26,32 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
+     <form action="{{ action('QuestionController@fourthquestion') }}" method="post" enctype="multipart/form-data">
       <img class="furniture" src="{{ asset('image/campus_sofa.jpg') }}" alt="キャンパス地のソファー"　width="150px" height="200px">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="キャンパス地のソファー">
+           <input id="campus_sofa" type="radio" name="Furniture" value="キャンパス地のソファー">
            キャンパス地のソファー
          </label>
        </div>
       <img class="furniture" src="{{ asset('image/leather_sofa.jpg') }}" alt="革張りのソファー"　width="150px" height="200px">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="革張りのソファー">
+           <input id="leather_sofa" type="radio" name="Furniture" value="革張りのソファー">
            革張りのソファー
          </label>
        </div>
       <img class="furniture" src="{{ asset('image/wood_dining.jpg') }}" alt="木目のダイニングセット"　width="150px" height="200px">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="木目のダイニングセット">
+           <input id="wood_dining" type="radio" name="Furniture" value="木目のダイニングセット">
            木目のダイニングセット
          </label>
        </div>
       <img class="furniture" src="{{ asset('image/desiners.jpg') }}" alt="デザイナーズ家具"　width="150px" height="200px">
-       <div class="checkbox mb-3">
+       <div class="radio mb-3">
          <label>
-           <input type="checkbox" value="デザイナーズ家具">
+           <input id="desiners" type="radio" name="Furniture" value="デザイナーズ家具">
            デザイナーズ家具
          </label>
        </div>
@@ -58,7 +59,9 @@
 　　</div>
 　　<div class="next-page">
 　　  <a href="firstquestion" class="btn btn-secondary" >はじめに戻る</a>
-　　  <a href="lastquestion" class="btn btn-primary" >次へ</a>
-　　</div> 
+　　  {{ csrf_field() }}
+　　  <input type="submit" class="btn btn-primary" value="次へ">
+　　</div>  
+　　 </form>
   </body>
 </html>

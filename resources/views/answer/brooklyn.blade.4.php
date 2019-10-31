@@ -33,8 +33,8 @@
     　<h5>NY州5区の1つ、倉庫や古いアパートが立ち並ぶブルックリン地区がモデルのインテリアスタイル。<br>レンガやアイアン素材を取り入れスモーキーカラーなど明度の低いアイテムを取り入れたスタイルが特徴です。</h5>
 　　</div>
   　 <div class="choice">
-  　  <a href="/" class="btn btn-secondary" >はじめに戻る</a>
-    　<a herf="contact" class="btn btn-outline-danger">お問い合わせ</a>
+  　   <a href="/" class="btn btn-secondary" >はじめに戻る</a>
+    　<a href="contact" class="btn btn-outline-danger">お問い合わせ</a>
      </div>
 　</div>
 </html>

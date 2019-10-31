@@ -33,8 +33,8 @@
     　<h5>シンプルな色合いとナチュラル素材でつくるインテリアスタイル。<br>あたたかい木のぬくもりとホワイトを取り入れ、明るい雰囲気のスタイル。素材の質感を存分に生かし、白かベージュ系でまとめるのがポイント。</h5>
 　　</div>
   　 <div class="choice">
-  　   <a herf="#" class="btn btn-outline-success">もう一度診断する</a>
-    　<a herf="#" class="btn btn-outline-danger">お問い合わせ</a>
+  　   <a href="/" class="btn btn-secondary" >はじめに戻る</a>
+    　<a href="contact" class="btn btn-outline-danger">お問い合わせ</a>
      </div>
 　</div>
 </html>
